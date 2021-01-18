@@ -82,6 +82,8 @@ export default class Chat extends Component {
             return <p key={chat.timestamp} className={"chat-bubble " + (this.state.user.uid === chat.uid ? "current-user" : "")}>
               {chat.content}
               <br />
+
+              
               <span className="chat-time float-right">{this.formatTime(chat.timestamp)}</span>
             </p>
           })}
